@@ -1,8 +1,37 @@
 .card-list {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  /*Tablets [601px -> 1200px]*/
+  .card-list {
+    width: 97vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /*Big smartphones [426px -> 600px]*/
+  .card-list {
+    width: 97vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  /*Small smartphones [325px -> 425px]*/
+  .card-list {
     width: 85vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
   }
-  
+}
